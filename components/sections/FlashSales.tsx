@@ -120,6 +120,7 @@ const FlashSales: React.FC<FlashSalesProps> = ({ products }) => {
         {productsWithDiscounts.map((product) => (
           <div key={product.id} className="snap-start">
             <ProductCard
+              id={product.id.toString()}
               name={product.title}
               price={product.price}
               originalPrice={product.price * 1.2}
