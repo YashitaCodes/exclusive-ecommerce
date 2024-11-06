@@ -10,7 +10,7 @@ export default function WishlistPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate wishlist data
+    // Sample wishlist data
     getProducts(4).then((products) => {
       setWishlistItems(products);
       setLoading(false);
@@ -38,6 +38,7 @@ export default function WishlistPage() {
         {wishlistItems.map((item) => (
           <ProductCard
             key={item.id}
+            id={item.id}
             name={item.title}
             price={item.price}
             rating={Math.floor(item.rating.rate)}
