@@ -92,9 +92,11 @@ const ShoppingCart = ({
 
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row justify-between gap-4">
+          <a href="/checkout">
         <button className="px-6 py-3 border rounded-lg hover:bg-gray-50 text-gray-800 font-medium">
           Return To Shop
         </button>
+          </a>
         <button className="px-6 py-3 border rounded-lg hover:bg-gray-50 text-gray-800 font-medium">
           Update Cart
         </button>
@@ -131,9 +133,9 @@ const ShoppingCart = ({
               <span className="font-bold text-xl">${subtotal.toFixed(2)}</span>
             </div>
           </div>
-          <button className="w-full px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 font-medium mt-4">
+          <a href="/checkout"><button className="w-full px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 font-medium mt-4">
             Proceed to checkout
-          </button>
+          </button></a>
         </div>
       </div>
     </div>
