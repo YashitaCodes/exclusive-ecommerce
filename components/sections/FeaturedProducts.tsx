@@ -41,6 +41,7 @@ const FeaturedProducts: React.FC<ProductProps> = ({products}) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6">
         {products.map((product: any, index: number) => (
           <ProductCard
+              id={product.id.toString()}
               key={product.id}
               name={product.title}
               price={product.price}
