@@ -48,14 +48,15 @@ export default function WishlistPage() {
       <div className="grid grid-cols-4 gap-6">
         {wishlistItems.map((item) => (
           <ProductCard
-            key={item.id}
-            id={item.id}
+            key={item.id || `fallback-id-${index}`} 
+            id={item.id || `fallback-id-${index}`} 
             name={item.title}
             price={item.price}
             rating={Math.floor(item.rating.rate)}
             reviews={item.rating.count}
             image={item.image}
           />
+
         ))}
       </div>
     </div>
