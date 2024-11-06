@@ -46,18 +46,17 @@ export default function WishlistPage() {
     <div className="max-w-7xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8">My Wishlist</h1>
       <div className="grid grid-cols-4 gap-6">
-        {wishlistItems.map((item) => (
-          <ProductCard
-            key={item.id || `fallback-id-${index}`} 
-            id={item.id || `fallback-id-${index}`} 
-            name={item.title}
-            price={item.price}
-            rating={Math.floor(item.rating.rate)}
-            reviews={item.rating.count}
-            image={item.image}
-          />
-
-        ))}
+{wishlistItems.map((item, index) => (
+  <ProductCard
+    key={item.id || `fallback-id-${index}`} // Using index as a fallback if id is undefined
+    id={item.id || `fallback-id-${index}`}   // Ensuring id is always a string
+    name={item.title}
+    price={item.price}
+    rating={Math.floor(item.rating.rate)}
+    reviews={item.rating.count}
+    image={item.image}
+  />
+))}
       </div>
     </div>
   );
