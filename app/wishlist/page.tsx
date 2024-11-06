@@ -10,11 +10,16 @@ export default function WishlistPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Sample wishlist data
+
     getProducts(4).then((products) => {
-      setWishlistItems(products);
+      const productsWithIds = products.map((product, index) => ({
+        ...product,
+        id: product.id || `generated-id-${index}`, 
+      }));
+      setWishlistItems(productsWithIds);
       setLoading(false);
     });
+
   }, []);
 
   if (loading) {
