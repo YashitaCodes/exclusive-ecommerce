@@ -92,7 +92,7 @@ const ShoppingCart = ({
 
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row justify-between gap-4">
-          <a href="/checkout">
+          <a href="/">
         <button className="px-6 py-3 border rounded-lg hover:bg-gray-50 text-gray-800 font-medium">
           Return To Shop
         </button>
