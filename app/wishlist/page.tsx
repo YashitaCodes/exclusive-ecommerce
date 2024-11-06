@@ -5,13 +5,20 @@ import ProductCard from '@/components/ProductCard';
 import { getProducts } from '@/lib/api';
 import { Heart } from 'lucide-react';
 
+interface Product {
+  id?: string;
+  title: string;
+  price: number;
+  rating: { rate: number; count: number };
+  image: string;
+}
+
 export default function WishlistPage() {
-  const [wishlistItems, setWishlistItems] = useState<any[]>([]);
+  const [wishlistItems, setWishlistItems] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
-    getProducts(4).then((products) => {
+    getProducts(4).then((products: Product[]) => {
       const productsWithIds = products.map((product, index) => ({
         ...product,
         id: product.id || `generated-id-${index}`, 
@@ -19,7 +26,6 @@ export default function WishlistPage() {
       setWishlistItems(productsWithIds);
       setLoading(false);
     });
-
   }, []);
 
   if (loading) {
