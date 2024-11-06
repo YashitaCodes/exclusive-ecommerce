@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#F5F5F5"/>
+  <circle cx="400" cy="200" r="150" fill="#DB4444" fill-opacity="0.1"/>
+  <path d="M350 150h100v100h-100z" fill="#DB4444" fill-opacity="0.2"/>
+  <text x="250" y="220" fill="#000000" font-family="Arial" font-size="48" font-weight="bold">Flash Sale</text>
+  <text x="250" y="260" fill="#000000" font-family="Arial" font-size="24">Limited time offers</text>
+</svg>
