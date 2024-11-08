@@ -1,4 +1,5 @@
 
+
 ![Banner](app/opengraph-image.png)
 
 <div align="center">
@@ -10,6 +11,17 @@
   <img src="https://img.shields.io/badge/License-MIT-green"/>
 </div>
 
+## 🛠️ Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/) with **TypeScript**
+- **Styling**: CSS Modules and **Tailwind CSS** for clean and consistent design
+- **Backend**: Integration with the [Fake Store API](https://fakestoreapi.com/) as a Placeholder Backend Service
+- **Authentication**: **AuthJS** for secure, reliable user sessions
+
+> [!CAUTION]  
+> This project is a submission for my application to a frontend developer position. It’s a recreation of the [Figma design](https://www.figma.com/design/bDCwDZYhh9zvhZOG4L26ui/Full-E-Commerce-Website-UI-UX-Design-(Community)?node-id=1-3&node-type=canvas&t=y3MfIKEaplHiejF5-0) provided by the company, without a fully functional backend, and is intended solely for assessment purposes.
+
+
 
 ## 🔥 Why Select this Project?
 
@@ -19,14 +31,6 @@
 - **Enhanced Security with AuthJS**: Secure user authentication implemented with AuthJS, providing robust, tested, and scalable authentication functionality.
 - **Thoroughly Optimized**: Every aspect, from OpenGraph metadata to responsiveness on all devices, has been set up with precision.
 - **Component-Driven Development**: Reusable components allow for a flexible, maintainable codebase, enabling rapid iteration and easy feature expansion.
-
-## 🛠️ Tech Stack
-
-- **Frontend**: [Next.js](https://nextjs.org/) with **TypeScript**
-- **Styling**: CSS Modules and **Tailwind CSS** for clean and consistent design
-- **Backend**: Integration with the [Fake Store API](https://fakestoreapi.com/) as a Placeholder Backend Service
-- **Authentication**: **AuthJS** for secure, reliable user sessions
-
 ## 📐 Architecture and Principles
 
 This project is organized with a **component-based, modular structure** that aligns with **SOLID principles**. The emphasis is on clean, maintainable code with reusability and scalability in mind. Each component is designed for maximum flexibility, making it easy to adapt the app to evolving business needs.
